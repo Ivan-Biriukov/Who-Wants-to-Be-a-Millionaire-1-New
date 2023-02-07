@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		570C79FF2992C15B009FC68D /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C79FE2992C15A009FC68D /* RulesViewController.swift */; };
+		570C7A022992C1EF009FC68D /* LicenseText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C7A012992C1EF009FC68D /* LicenseText.swift */; };
+		570C7A042992C3B1009FC68D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 570C7A032992C3B1009FC68D /* Roboto-Medium.ttf */; };
+		570C7A062992C3BD009FC68D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 570C7A052992C3BD009FC68D /* Roboto-Bold.ttf */; };
 		D77161882991718200D86F74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77161872991718200D86F74 /* AppDelegate.swift */; };
 		D771618A2991718200D86F74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77161892991718200D86F74 /* SceneDelegate.swift */; };
 		D771618C2991718200D86F74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D771618B2991718200D86F74 /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		570C79FE2992C15A009FC68D /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		570C7A012992C1EF009FC68D /* LicenseText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseText.swift; sourceTree = "<group>"; };
+		570C7A032992C3B1009FC68D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		570C7A052992C3BD009FC68D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		D77161842991718200D86F74 /* Who-Wants-to-Be-a-Millionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Who-Wants-to-Be-a-Millionaire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77161872991718200D86F74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77161892991718200D86F74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +47,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		570C7A002992C19F009FC68D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				570C7A012992C1EF009FC68D /* LicenseText.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		570C7A072992C443009FC68D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				570C7A052992C3BD009FC68D /* Roboto-Bold.ttf */,
+				570C7A032992C3B1009FC68D /* Roboto-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D771617B2991718200D86F74 = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +86,9 @@
 				D77161A029921A3600D86F74 /* Extantion */,
 				D771619C2991723600D86F74 /* SupportingFile */,
 				D771619B2991722700D86F74 /* Application */,
+				570C7A002992C19F009FC68D /* Model */,
 				D771618B2991718200D86F74 /* ViewController.swift */,
+				570C79FE2992C15A009FC68D /* RulesViewController.swift */,
 			);
 			path = "Who-Wants-to-Be-a-Millionaire";
 			sourceTree = "<group>";
@@ -78,6 +105,7 @@
 		D771619C2991723600D86F74 /* SupportingFile */ = {
 			isa = PBXGroup;
 			children = (
+				570C7A072992C443009FC68D /* Fonts */,
 				D77161902991718500D86F74 /* Assets.xcassets */,
 				D77161922991718500D86F74 /* LaunchScreen.storyboard */,
 				D77161952991718500D86F74 /* Info.plist */,
@@ -154,6 +182,8 @@
 			files = (
 				D77161942991718500D86F74 /* LaunchScreen.storyboard in Resources */,
 				D77161912991718500D86F74 /* Assets.xcassets in Resources */,
+				570C7A062992C3BD009FC68D /* Roboto-Bold.ttf in Resources */,
+				570C7A042992C3B1009FC68D /* Roboto-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +198,9 @@
 				D771618C2991718200D86F74 /* ViewController.swift in Sources */,
 				D77161882991718200D86F74 /* AppDelegate.swift in Sources */,
 				D771618A2991718200D86F74 /* SceneDelegate.swift in Sources */,
+				570C79FF2992C15B009FC68D /* RulesViewController.swift in Sources */,
 				D77161A429921A4D00D86F74 /* UIColor + Extension.swift in Sources */,
+				570C7A022992C1EF009FC68D /* LicenseText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
