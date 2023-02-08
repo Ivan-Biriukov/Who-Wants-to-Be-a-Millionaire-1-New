@@ -9,7 +9,7 @@ import UIKit
 
 class RulesViewController: UIViewController {
 // MARK: - Set designe of RulesViewController programmatically
-    //Set BackgroundImage
+    
     private let backgroundImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "Frame 1")
@@ -18,7 +18,7 @@ class RulesViewController: UIViewController {
         return imageView
     }()
     
-    //Setup footer image
+    
     private let footerImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "image 5")
@@ -27,7 +27,7 @@ class RulesViewController: UIViewController {
         return imageView
     }()
     
- //Create HeadLabel before the rulestext
+ 
     private let mainLabel: UILabel = {
         var licenseText = LicenseText()
         let label = UILabel()
@@ -40,7 +40,7 @@ class RulesViewController: UIViewController {
         return label
     }()
     
-    //Create ScrollViewContainer for RulesText
+    
     private let rulesListScrollView: UIScrollView = {
         let rulesList = UIScrollView()
         rulesList.backgroundColor = .white
@@ -50,7 +50,7 @@ class RulesViewController: UIViewController {
         return rulesList
     }()
     
-    //Create a textLable with ruleslist
+    
     private let rulesTextLabel: UILabel = {
         var licenseText = LicenseText()
         let label = UILabel()
@@ -63,7 +63,7 @@ class RulesViewController: UIViewController {
         return label
     }()
     
-    //Create Button for Accept rules
+    
     @objc private var gotItButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("I GOT IT !", for: .normal)
@@ -93,8 +93,6 @@ class RulesViewController: UIViewController {
     
 // MARK: - Global setup for Views
     private func setupViews(){
-
-        // Add elements to be displayed
         view.addSubview(backgroundImageView)
         view.addSubview(footerImageView)
         view.addSubview(rulesListScrollView)
@@ -111,37 +109,31 @@ extension RulesViewController {
     private func setConstraints(){
         NSLayoutConstraint.activate([
             
-            // Setup background Image
-            backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
-            backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
+            backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor),
+            backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            backgroundImageView.trailingAnchor.constraint(equalTo: view.leadingAnchor),
+            backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
-            //Setup footer Image
-            footerImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            footerImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            footerImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
+            footerImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            footerImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            footerImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             footerImageView.heightAnchor.constraint(equalToConstant: 225),
             
-            // Setup mainLabel Anchors
             mainLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
             mainLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             mainLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             mainLabel.heightAnchor.constraint(equalToConstant: 100),
             
-            // Setup scrollView Anchors
             rulesListScrollView.topAnchor.constraint(equalTo: mainLabel.topAnchor, constant: 100),
             rulesListScrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
             rulesListScrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
             rulesListScrollView.bottomAnchor.constraint(equalTo: gotItButton.topAnchor, constant: -30),
             
-            //Setup gotItButton Anchors
             gotItButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30),
             gotItButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
             gotItButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
             gotItButton.heightAnchor.constraint(equalToConstant: 50),
             
-            // Setup rulesTextList Anchors
             rulesTextLabel.topAnchor.constraint(equalTo: rulesListScrollView.topAnchor, constant: 20),
             rulesTextLabel.leadingAnchor.constraint(equalTo: rulesListScrollView.leadingAnchor, constant: 7),
             rulesTextLabel.trailingAnchor.constraint(equalTo: rulesListScrollView.trailingAnchor, constant: -7),
