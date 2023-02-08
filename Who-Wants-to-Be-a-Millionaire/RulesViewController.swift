@@ -8,8 +8,8 @@
 import UIKit
 
 class RulesViewController: UIViewController {
- 
-    // MARK: - Set BackgroundImage
+// MARK: - Set designe of RulesViewController programmatically
+    //Set BackgroundImage
     private let backgroundImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "Frame 1")
@@ -18,7 +18,7 @@ class RulesViewController: UIViewController {
         return imageView
     }()
     
-    // MARK: - Setup footer image
+    //Setup footer image
     private let footerImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "image 5")
@@ -27,7 +27,7 @@ class RulesViewController: UIViewController {
         return imageView
     }()
     
- // MARK: - Create HeadLabel before the rulestext
+ //Create HeadLabel before the rulestext
     private let mainLabel: UILabel = {
         var licenseText = LicenseText()
         let label = UILabel()
@@ -40,7 +40,7 @@ class RulesViewController: UIViewController {
         return label
     }()
     
-    // MARK: - Create ScrollViewContainer for RulesText
+    //Create ScrollViewContainer for RulesText
     private let rulesListScrollView: UIScrollView = {
         let rulesList = UIScrollView()
         rulesList.backgroundColor = .white
@@ -50,7 +50,7 @@ class RulesViewController: UIViewController {
         return rulesList
     }()
     
-    // MARK: - Create a textLable with ruleslist
+    //Create a textLable with ruleslist
     private let rulesTextLabel: UILabel = {
         var licenseText = LicenseText()
         let label = UILabel()
@@ -63,7 +63,7 @@ class RulesViewController: UIViewController {
         return label
     }()
     
-    // MARK: - Create Button for Accept rules
+    //Create Button for Accept rules
     @objc private var gotItButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("I GOT IT !", for: .normal)
