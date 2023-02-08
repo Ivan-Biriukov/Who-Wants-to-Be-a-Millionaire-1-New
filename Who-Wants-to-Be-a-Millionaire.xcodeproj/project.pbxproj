@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CED788BB2993511000203EF0 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED788B72993511000203EF0 /* Label.swift */; };
+		CED788BC2993511000203EF0 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED788B82993511000203EF0 /* Buttons.swift */; };
+		CED788BD2993511000203EF0 /* VerticalStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED788B92993511000203EF0 /* VerticalStack.swift */; };
+		CED788BE2993511000203EF0 /* HorizontalStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED788BA2993511000203EF0 /* HorizontalStack.swift */; };
+		CED788C22993511B00203EF0 /* StartToPlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED788C02993511B00203EF0 /* StartToPlayController.swift */; };
+		CED788C32993511B00203EF0 /* StartToPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED788C12993511B00203EF0 /* StartToPlay.swift */; };
+		CED788C62993514500203EF0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CED788C52993514500203EF0 /* SnapKit */; };
 		D77161882991718200D86F74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77161872991718200D86F74 /* AppDelegate.swift */; };
 		D771618A2991718200D86F74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77161892991718200D86F74 /* SceneDelegate.swift */; };
 		D771618C2991718200D86F74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D771618B2991718200D86F74 /* ViewController.swift */; };
@@ -17,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CED788B72993511000203EF0 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		CED788B82993511000203EF0 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		CED788B92993511000203EF0 /* VerticalStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalStack.swift; sourceTree = "<group>"; };
+		CED788BA2993511000203EF0 /* HorizontalStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalStack.swift; sourceTree = "<group>"; };
+		CED788C02993511B00203EF0 /* StartToPlayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartToPlayController.swift; sourceTree = "<group>"; };
+		CED788C12993511B00203EF0 /* StartToPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartToPlay.swift; sourceTree = "<group>"; };
 		D77161842991718200D86F74 /* Who-Wants-to-Be-a-Millionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Who-Wants-to-Be-a-Millionaire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77161872991718200D86F74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77161892991718200D86F74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,12 +46,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED788C62993514500203EF0 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CED788B62993511000203EF0 /* UIkit */ = {
+			isa = PBXGroup;
+			children = (
+				CED788B72993511000203EF0 /* Label.swift */,
+				CED788B82993511000203EF0 /* Buttons.swift */,
+				CED788B92993511000203EF0 /* VerticalStack.swift */,
+				CED788BA2993511000203EF0 /* HorizontalStack.swift */,
+			);
+			path = UIkit;
+			sourceTree = "<group>";
+		};
+		CED788BF2993511B00203EF0 /* NewView */ = {
+			isa = PBXGroup;
+			children = (
+				CED788C02993511B00203EF0 /* StartToPlayController.swift */,
+				CED788C12993511B00203EF0 /* StartToPlay.swift */,
+			);
+			path = NewView;
+			sourceTree = "<group>";
+		};
 		D771617B2991718200D86F74 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +96,8 @@
 				D771619C2991723600D86F74 /* SupportingFile */,
 				D771619B2991722700D86F74 /* Application */,
 				D771618B2991718200D86F74 /* ViewController.swift */,
+				CED788BF2993511B00203EF0 /* NewView */,
+				CED788B62993511000203EF0 /* UIkit */,
 			);
 			path = "Who-Wants-to-Be-a-Millionaire";
 			sourceTree = "<group>";
@@ -110,6 +146,9 @@
 			dependencies = (
 			);
 			name = "Who-Wants-to-Be-a-Millionaire";
+			packageProductDependencies = (
+				CED788C52993514500203EF0 /* SnapKit */,
+			);
 			productName = "Who-Wants-to-Be-a-Millionaire";
 			productReference = D77161842991718200D86F74 /* Who-Wants-to-Be-a-Millionaire.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +177,9 @@
 				Base,
 			);
 			mainGroup = D771617B2991718200D86F74;
+			packageReferences = (
+				CED788C42993514500203EF0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = D77161852991718200D86F74 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,10 +206,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED788BC2993511000203EF0 /* Buttons.swift in Sources */,
 				D77161A229921A4700D86F74 /* UIFont + Extension.swift in Sources */,
+				CED788BE2993511000203EF0 /* HorizontalStack.swift in Sources */,
 				D771618C2991718200D86F74 /* ViewController.swift in Sources */,
+				CED788BB2993511000203EF0 /* Label.swift in Sources */,
+				CED788C22993511B00203EF0 /* StartToPlayController.swift in Sources */,
 				D77161882991718200D86F74 /* AppDelegate.swift in Sources */,
 				D771618A2991718200D86F74 /* SceneDelegate.swift in Sources */,
+				CED788BD2993511000203EF0 /* VerticalStack.swift in Sources */,
+				CED788C32993511B00203EF0 /* StartToPlay.swift in Sources */,
 				D77161A429921A4D00D86F74 /* UIColor + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +430,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CED788C42993514500203EF0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CED788C52993514500203EF0 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CED788C42993514500203EF0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D771617C2991718200D86F74 /* Project object */;
 }
