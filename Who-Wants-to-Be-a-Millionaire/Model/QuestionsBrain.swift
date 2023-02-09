@@ -15,7 +15,7 @@ struct QuestionsBrain {
     var questionRightAnswer: String?
 
     
-    func getAllQuestions() -> [[QuestionModel]] {
+    func getAllQuestions() -> [[QuestionsModel]] {
         return questionLibrary.allQuestions
     }
     

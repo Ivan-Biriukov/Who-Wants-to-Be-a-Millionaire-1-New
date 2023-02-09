@@ -11,7 +11,7 @@
 		570C7A022992C1EF009FC68D /* LicenseText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C7A012992C1EF009FC68D /* LicenseText.swift */; };
 		570C7A042992C3B1009FC68D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 570C7A032992C3B1009FC68D /* Roboto-Medium.ttf */; };
 		570C7A062992C3BD009FC68D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 570C7A052992C3BD009FC68D /* Roboto-Bold.ttf */; };
-		57D6A02E2994542000DD26E1 /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D6A02D2994542000DD26E1 /* QuestionsModel.swift */; };
+		578767EC29952B700063D214 /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578767EB29952B700063D214 /* QuestionsModel.swift */; };
 		57D6A031299454FF00DD26E1 /* QuestionsLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D6A030299454FF00DD26E1 /* QuestionsLibrary.swift */; };
 		57D6A033299457EE00DD26E1 /* QuestionsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D6A032299457EE00DD26E1 /* QuestionsBrain.swift */; };
 		D77161882991718200D86F74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77161872991718200D86F74 /* AppDelegate.swift */; };
@@ -28,7 +28,7 @@
 		570C7A012992C1EF009FC68D /* LicenseText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseText.swift; sourceTree = "<group>"; };
 		570C7A032992C3B1009FC68D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		570C7A052992C3BD009FC68D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
-		57D6A02D2994542000DD26E1 /* QuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsModel.swift; sourceTree = "<group>"; };
+		578767EB29952B700063D214 /* QuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsModel.swift; sourceTree = "<group>"; };
 		57D6A030299454FF00DD26E1 /* QuestionsLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsLibrary.swift; sourceTree = "<group>"; };
 		57D6A032299457EE00DD26E1 /* QuestionsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsBrain.swift; sourceTree = "<group>"; };
 		D77161842991718200D86F74 /* Who-Wants-to-Be-a-Millionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Who-Wants-to-Be-a-Millionaire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,8 +56,8 @@
 		570C7A002992C19F009FC68D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				57D6A02D2994542000DD26E1 /* QuestionsModel.swift */,
 				57D6A032299457EE00DD26E1 /* QuestionsBrain.swift */,
+				578767EB29952B700063D214 /* QuestionsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,9 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D77161A229921A4700D86F74 /* UIFont + Extension.swift in Sources */,
+				578767EC29952B700063D214 /* QuestionsModel.swift in Sources */,
 				D771618C2991718200D86F74 /* ViewController.swift in Sources */,
 				D77161882991718200D86F74 /* AppDelegate.swift in Sources */,
-				57D6A02E2994542000DD26E1 /* QuestionsModel.swift in Sources */,
 				D771618A2991718200D86F74 /* SceneDelegate.swift in Sources */,
 				57D6A031299454FF00DD26E1 /* QuestionsLibrary.swift in Sources */,
 				57D6A033299457EE00DD26E1 /* QuestionsBrain.swift in Sources */,
