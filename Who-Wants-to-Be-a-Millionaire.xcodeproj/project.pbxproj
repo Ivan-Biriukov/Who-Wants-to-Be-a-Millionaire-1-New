@@ -11,6 +11,9 @@
 		570C7A022992C1EF009FC68D /* LicenseText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C7A012992C1EF009FC68D /* LicenseText.swift */; };
 		570C7A042992C3B1009FC68D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 570C7A032992C3B1009FC68D /* Roboto-Medium.ttf */; };
 		570C7A062992C3BD009FC68D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 570C7A052992C3BD009FC68D /* Roboto-Bold.ttf */; };
+		57D6A02E2994542000DD26E1 /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D6A02D2994542000DD26E1 /* QuestionsModel.swift */; };
+		57D6A031299454FF00DD26E1 /* QuestionsLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D6A030299454FF00DD26E1 /* QuestionsLibrary.swift */; };
+		57D6A033299457EE00DD26E1 /* QuestionsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D6A032299457EE00DD26E1 /* QuestionsBrain.swift */; };
 		D77161882991718200D86F74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77161872991718200D86F74 /* AppDelegate.swift */; };
 		D771618A2991718200D86F74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77161892991718200D86F74 /* SceneDelegate.swift */; };
 		D771618C2991718200D86F74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D771618B2991718200D86F74 /* ViewController.swift */; };
@@ -25,6 +28,9 @@
 		570C7A012992C1EF009FC68D /* LicenseText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseText.swift; sourceTree = "<group>"; };
 		570C7A032992C3B1009FC68D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		570C7A052992C3BD009FC68D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		57D6A02D2994542000DD26E1 /* QuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsModel.swift; sourceTree = "<group>"; };
+		57D6A030299454FF00DD26E1 /* QuestionsLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsLibrary.swift; sourceTree = "<group>"; };
+		57D6A032299457EE00DD26E1 /* QuestionsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsBrain.swift; sourceTree = "<group>"; };
 		D77161842991718200D86F74 /* Who-Wants-to-Be-a-Millionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Who-Wants-to-Be-a-Millionaire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77161872991718200D86F74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77161892991718200D86F74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +56,8 @@
 		570C7A002992C19F009FC68D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				570C7A012992C1EF009FC68D /* LicenseText.swift */,
+				57D6A02D2994542000DD26E1 /* QuestionsModel.swift */,
+				57D6A032299457EE00DD26E1 /* QuestionsBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -62,6 +69,15 @@
 				570C7A032992C3B1009FC68D /* Roboto-Medium.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		57D6A02F299454D000DD26E1 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				570C7A012992C1EF009FC68D /* LicenseText.swift */,
+				57D6A030299454FF00DD26E1 /* QuestionsLibrary.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		D771617B2991718200D86F74 = {
@@ -83,6 +99,7 @@
 		D77161862991718200D86F74 /* Who-Wants-to-Be-a-Millionaire */ = {
 			isa = PBXGroup;
 			children = (
+				57D6A02F299454D000DD26E1 /* Storage */,
 				D77161A029921A3600D86F74 /* Extantion */,
 				D771619C2991723600D86F74 /* SupportingFile */,
 				D771619B2991722700D86F74 /* Application */,
@@ -197,7 +214,10 @@
 				D77161A229921A4700D86F74 /* UIFont + Extension.swift in Sources */,
 				D771618C2991718200D86F74 /* ViewController.swift in Sources */,
 				D77161882991718200D86F74 /* AppDelegate.swift in Sources */,
+				57D6A02E2994542000DD26E1 /* QuestionsModel.swift in Sources */,
 				D771618A2991718200D86F74 /* SceneDelegate.swift in Sources */,
+				57D6A031299454FF00DD26E1 /* QuestionsLibrary.swift in Sources */,
+				57D6A033299457EE00DD26E1 /* QuestionsBrain.swift in Sources */,
 				570C79FF2992C15B009FC68D /* RulesViewController.swift in Sources */,
 				D77161A429921A4D00D86F74 /* UIColor + Extension.swift in Sources */,
 				570C7A022992C1EF009FC68D /* LicenseText.swift in Sources */,

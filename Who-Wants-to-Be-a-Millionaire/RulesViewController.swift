@@ -9,7 +9,6 @@ import UIKit
 
 class RulesViewController: UIViewController {
  
-    // MARK: - Set BackgroundImage
     private let backgroundImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "Frame 1")
