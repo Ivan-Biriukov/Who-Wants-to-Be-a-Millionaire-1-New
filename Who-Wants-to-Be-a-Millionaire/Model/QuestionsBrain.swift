@@ -13,7 +13,6 @@ struct QuestionsBrain {
     var questionHardnessNumber = 0
     var questionLibrary = QuestionsLibrary()
     var questionRightAnswer: String?
-    
 
     
     func getAllQuestions() -> [[QuestionsModel]] {
@@ -33,8 +32,8 @@ struct QuestionsBrain {
     }
     
     func getAccessToRightAnswer() -> String{
-        let getQuestionAnswers = getAllQuestions()
-        let questionRightAnswer = getQuestionAnswers[questionHardnessNumber][questionNumber].rightAnswer
+        let questionAnswers = getAllQuestions()
+        let questionRightAnswer = questionAnswers[questionHardnessNumber][questionNumber].rightAnswer
         return questionRightAnswer
     }
 
