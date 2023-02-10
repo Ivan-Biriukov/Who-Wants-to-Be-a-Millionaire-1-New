@@ -5,7 +5,7 @@
 //  Created by иван Бирюков on 09.02.2023.
 //
 
-import Foundation
+import UIKit
 
 struct QuestionsBrain {
     
@@ -13,6 +13,7 @@ struct QuestionsBrain {
     var questionHardnessNumber = 0
     var questionLibrary = QuestionsLibrary()
     var questionRightAnswer: String?
+    
 
     
     func getAllQuestions() -> [[QuestionsModel]] {
@@ -60,3 +61,5 @@ struct QuestionsBrain {
         }
     }
 }
+
+
