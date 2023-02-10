@@ -16,6 +16,9 @@ final class InGameViewController: UIViewController {
     private var numberOfQuestionLabel = UILabel()
     private var pricePoolLabel = UILabel()
     private var stackForAnswerButtons = UIStackView()
+    private var fivtyFivtyHelpButton = UIButton()
+    private var phoneHelpButton = UIButton()
+    private var peopleHelpButton = UIButton()
     
     private var questionBrain = QuestionsBrain()
     
@@ -36,6 +39,9 @@ final class InGameViewController: UIViewController {
         configurePricePoolLabel()
         configureStackForAnswerButtons()
         setupAnswersForButtons()
+        configureFivtyFivtyHelpButton()
+        configurePhoneHelpButton()
+        configurePeopleHelpButton()
     }
     
     private func addSubViews() {
@@ -45,6 +51,9 @@ final class InGameViewController: UIViewController {
         view.addSubview(numberOfQuestionLabel)
         view.addSubview(pricePoolLabel)
         view.addSubview(stackForAnswerButtons)
+        view.addSubview(fivtyFivtyHelpButton)
+        view.addSubview(peopleHelpButton)
+        view.addSubview(phoneHelpButton)
     }
     
     // MARK: - BACKGROUND IMAGE
@@ -59,18 +68,53 @@ final class InGameViewController: UIViewController {
         millionairImageView.contentMode = .scaleAspectFill
     }
     
+    // MARK: - FIVTY FIVTY HELP BUTTON
+    private func configureFivtyFivtyHelpButton() {
+        fivtyFivtyHelpButton.setImage(UIImage(named: "FivtyFivtyHelp"), for: .normal)
+        fivtyFivtyHelpButton.addTarget(self, action: #selector(onFivtyHelpPressed), for: .touchUpInside)
+    }
+    
+    @objc private func onFivtyHelpPressed() {
+        // действия по нажатию на кнопку 50 на 50
+        print("50/50 PRESSED")
+    }
+    
+    // MARK: - PHONE HELP BUTTON
+    private func configurePhoneHelpButton() {
+        // TODO: - Скачать изображения, добавить в ассетс и изменить имя ниже
+        phoneHelpButton.setImage(UIImage(named: "FivtyFivtyHelp"), for: .normal)
+        phoneHelpButton.addTarget(self, action: #selector(onPhoneHelpPressed), for: .touchUpInside)
+    }
+    
+    @objc private func onPhoneHelpPressed() {
+        // действия по нажатию на кнопку звонок другу
+        print("PHONE PRESSED")
+    }
+    
+    // MARK: - PEOPLE HELP BUTTON
+    private func configurePeopleHelpButton() {
+        // TODO: - Скачать изображения, добавить в ассетс и изменить имя ниже
+        peopleHelpButton.setImage(UIImage(named: "FivtyFivtyHelp"), for: .normal)
+        peopleHelpButton.addTarget(self, action: #selector(onPeopleHelpPressed), for: .touchUpInside)
+    }
+    
+    @objc private func onPeopleHelpPressed() {
+        // действия по нажатию на кнопку помощь зала
+        print("PEOPLE PRESSED")
+    }
+    
     // MARK: - QUESTION LABEL
     private func configureQuestionLabel() {
-        questionLabel.text = "What year was the year, when first deodorant was invented in our life?"
+        questionLabel.text = "What year was the year, when first deodorant was invented in our life?" // замеоканные данные передалть, написать метод для сетапа лейблы
         questionLabel.numberOfLines = 0
-        questionLabel.textAlignment = .left
+        questionLabel.textAlignment = .right
         questionLabel.textColor = .white
         questionLabel.font = UIFont.robotoMedium18()
     }
     
     // MARK: - NUMBER OF QUESTION LABEL
     private func configureNumberOfQuestionLabel() {
-        numberOfQuestionLabel.text = "Question 1"
+        numberOfQuestionLabel.text = "Question 1" // замеоканные данные передалть, написать метод для сетапа лейблы
         numberOfQuestionLabel.textAlignment = .left
         numberOfQuestionLabel.textColor = .white
         numberOfQuestionLabel.font = UIFont.robotoMedium24()
@@ -78,7 +122,7 @@ final class InGameViewController: UIViewController {
     
     // MARK: - PRICE POOL LABEL
     private func configurePricePoolLabel() {
-        pricePoolLabel.text = "500 RUB"
+        pricePoolLabel.text = "500 RUB" // замеоканные данные передалть, написать метод для сетапа лейблы
         pricePoolLabel.textAlignment = .right
         pricePoolLabel.textColor = .white
         pricePoolLabel.font = UIFont.robotoMedium24()
@@ -113,8 +157,6 @@ final class InGameViewController: UIViewController {
             }
             stackForAnswerButtons.addArrangedSubview(answerView)
         }
-        
-        
     }
 }
 
@@ -128,6 +170,9 @@ extension InGameViewController {
         numberOfQuestionLabel.translatesAutoresizingMaskIntoConstraints = false
         pricePoolLabel.translatesAutoresizingMaskIntoConstraints = false
         stackForAnswerButtons.translatesAutoresizingMaskIntoConstraints = false
+        fivtyFivtyHelpButton.translatesAutoresizingMaskIntoConstraints = false
+        phoneHelpButton.translatesAutoresizingMaskIntoConstraints = false
+        peopleHelpButton.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
             backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -154,6 +199,21 @@ extension InGameViewController {
             stackForAnswerButtons.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
             stackForAnswerButtons.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             stackForAnswerButtons.topAnchor.constraint(equalTo: numberOfQuestionLabel.bottomAnchor, constant: 30),
+            
+            fivtyFivtyHelpButton.heightAnchor.constraint(equalToConstant: 87),
+            fivtyFivtyHelpButton.widthAnchor.constraint(equalToConstant: 105),
+            fivtyFivtyHelpButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
+            fivtyFivtyHelpButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -35),
+            
+            phoneHelpButton.heightAnchor.constraint(equalToConstant: 87),
+            phoneHelpButton.widthAnchor.constraint(equalToConstant: 105),
+            phoneHelpButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            phoneHelpButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -35),
+            
+            peopleHelpButton.heightAnchor.constraint(equalToConstant: 87),
+            peopleHelpButton.widthAnchor.constraint(equalToConstant: 105),
+            peopleHelpButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
+            peopleHelpButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -35)
             ])
     }
 }
